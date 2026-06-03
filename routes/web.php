@@ -11,6 +11,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::delete('/learn/progress/{challengeId}', [LearnController::class, 'destroy'])->name('learn.progress.destroy');
 
     Route::inertia('/reference', 'reference')->name('reference');
+    Route::inertia('/guide', 'guide')->name('guide');
 });
 
 require __DIR__.'/settings.php';
