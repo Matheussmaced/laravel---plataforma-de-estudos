@@ -1,5 +1,5 @@
 import { Link } from '@inertiajs/react';
-import { BookOpen, FolderGit2, Github, GraduationCap, User2 } from 'lucide-react';
+import { BookMarked, FolderGit2, Github, GraduationCap, User2 } from 'lucide-react';
 import AppLogo from '@/components/app-logo';
 import { NavFooter } from '@/components/nav-footer';
 import { NavMain } from '@/components/nav-main';
@@ -13,7 +13,7 @@ import {
     SidebarMenuButton,
     SidebarMenuItem,
 } from '@/components/ui/sidebar';
-import { learn } from '@/routes';
+import { learn, reference } from '@/routes';
 import type { NavItem } from '@/types';
 
 const mainNavItems: NavItem[] = [
@@ -21,6 +21,11 @@ const mainNavItems: NavItem[] = [
         title: 'Aprender',
         href: learn(),
         icon: GraduationCap,
+    },
+    {
+        title: 'Referência',
+        href: reference(),
+        icon: BookMarked,
     },
 ];
 

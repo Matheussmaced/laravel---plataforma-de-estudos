@@ -10,6 +10,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::post('/learn/progress', [LearnController::class, 'store'])->name('learn.progress.store');
     Route::delete('/learn/progress/{challengeId}', [LearnController::class, 'destroy'])->name('learn.progress.destroy');
 
+    Route::inertia('/reference', 'reference')->name('reference');
 });
 
 require __DIR__.'/settings.php';
