@@ -1,5 +1,5 @@
 import { Link } from '@inertiajs/react';
-import { BookMarked, FolderGit2, Github, GraduationCap, LayoutList, User2 } from 'lucide-react';
+import { BookMarked, FolderGit2, Github, GraduationCap, LayoutList, Layers, User2 } from 'lucide-react';
 import AppLogo from '@/components/app-logo';
 import { NavFooter } from '@/components/nav-footer';
 import { NavMain } from '@/components/nav-main';
@@ -13,7 +13,7 @@ import {
     SidebarMenuButton,
     SidebarMenuItem,
 } from '@/components/ui/sidebar';
-import { guide, learn, reference } from '@/routes';
+import { guide, learn, reference, starter } from '@/routes';
 import type { NavItem } from '@/types';
 
 const mainNavItems: NavItem[] = [
@@ -31,6 +31,11 @@ const mainNavItems: NavItem[] = [
         title: 'Guia API CRUD',
         href: guide(),
         icon: LayoutList,
+    },
+    {
+        title: 'Como funciona',
+        href: starter(),
+        icon: Layers,
     },
 ];
 

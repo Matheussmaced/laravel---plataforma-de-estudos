@@ -12,6 +12,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
     Route::inertia('/reference', 'reference')->name('reference');
     Route::inertia('/guide', 'guide')->name('guide');
+    Route::inertia('/starter', 'starter')->name('starter');
 });
 
 require __DIR__.'/settings.php';
